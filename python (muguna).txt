@@ -1,0 +1,55 @@
+#import the pi constant
+from math import pi
+
+# Circle
+def circle_area(radius):
+    return pi * radius * radius
+
+def circle_circumference(radius):
+    return 2 * pi * radius
+
+# Rectangle
+def rectangle_area(length, width):
+    return length * width
+
+def rectangle_perimeter(length, width):
+    return 2 * (length + width)
+
+# Triangle (assuming right-angled)
+def triangle_area(base, height):
+    return 1/2 * base * height
+
+def triangle_perimeter(a, b, c):
+    return a + b + c
+
+# Square
+def square_area(side):
+    return side * side
+
+def square_perimeter(side):
+    return 4 * side
+
+# values
+radius = 21
+length = 18
+width = 9
+base =6
+height = 10
+a, b, c =5,8, 12
+side = 6
+
+print("Circle:")
+print("Area:", circle_area(radius))
+print("Circumference:", circle_circumference(radius))
+
+print("\nRectangle:")
+print("Area:", rectangle_area(length, width))
+print("Perimeter:", rectangle_perimeter(length, width))
+
+print("\nTriangle:")
+print("Area:", triangle_area(base, height))
+print("Perimeter:", triangle_perimeter(a, b, c))
+
+print("\nSquare:")
+print("Area:", square_area(side))
+print("Perimeter:", square_perimeter(side))
